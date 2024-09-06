@@ -1,15 +1,15 @@
 /* Table */
-.customers-table-header {
-  padding-left: 38px;
-  padding-right: 38px;
+.status {
+ text-align: center;
+ padding-left: 18px;
 }
 .customers-table {
-  border: 1px solid #ccc;
-  border-collapse: collapse;
-  margin: 0;
-  padding: 0;
+  /* border: 1px solid #ccc;
+  border-collapse: collapse; */
+  /* margin: 0;
+  padding: 0; */
   width: 100%;
-  table-layout: fixed;
+  /* table-layout: fixed; */
   margin-bottom: 30px;
 }
 
@@ -28,6 +28,11 @@ table td {
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: start;
+}
+
+.status-btn {
+  display: flex;
+  justify-content: flex-end;
 }
 
 table th {

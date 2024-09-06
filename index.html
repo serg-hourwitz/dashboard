@@ -214,6 +214,7 @@
     <div class="app">
       <!-- * Page -->
       <div class="page wrapper">
+        <!-- * Header -->
         <header class="header">
           <!-- * logo -->
           <div class="logo">
@@ -223,11 +224,14 @@
             <span class="page-title">Dashboard</span>
             <span class="page-title-version">v.01</span>
           </div>
+          <!-- * greeting -->
           <div class="header-greeting">
-            <div class="section-header-title">Hello Evano 👋🏼</div>
+            <div class="header-greeting-title">Hello Evano 👋🏼</div>
           </div>
         </header>
+        <!-- * Main -->
         <main class="main">
+          <!-- * sidebar -->
           <div class="sidebar">
             <div class="container">
               <!-- * Nav -->
@@ -321,6 +325,7 @@
               <use xlink:href="#icon-search"></use>
             </svg> -->
           </div>
+          <!-- * section -->
           <div class="section">
             <div class="section-main">
               <div class="section-header">
@@ -339,6 +344,7 @@
                   </label>
                 </div>
               </div>
+              <!-- * table -->
               <div class="customers-table-header">
                 <table class="customers-table">
                   <thead>
@@ -360,7 +366,7 @@
                       <td data-label="Phone">(225) 555-0118</td>
                       <td data-label="Mail">jane@microsoft.com</td>
                       <td data-label="Country">United States</td>
-                      <td data-label="Button">
+                      <td data-label="Button" class="status-btn">
                         <button type="button" class="btn-active">Active</button>
                       </td>
                     </tr>
@@ -372,8 +378,10 @@
                       <td data-label="Phone">(205) 555-0100</td>
                       <td data-label="Mail">floyd@yahoo.com</td>
                       <td data-label="Country">Kiribati</td>
-                      <td data-label="Button">
-                        <button type="button" class="btn-inactive">Inactive</button>
+                      <td data-label="Button" class="status-btn">
+                        <button type="button" class="btn-inactive">
+                          Inactive
+                        </button>
                       </td>
                     </tr>
                     <tr>
@@ -384,7 +392,7 @@
                       <td data-label="Phone">(302) 555-0107</td>
                       <td data-label="Mail">ronald@adobe.com</td>
                       <td data-label="Country">Israel</td>
-                      <td data-label="Button">
+                      <td data-label="Button" class="status-btn">
                         <button class="btn-inactive">Inactive</button>
                       </td>
                     </tr>
@@ -396,7 +404,7 @@
                       <td data-label="Phone">(252) 555-0126</td>
                       <td data-label="Mail">marvin@tesla.com</td>
                       <td data-label="Country">Iran</td>
-                      <td data-label="Button">
+                      <td data-label="Button" class="status-btn">
                         <button type="button" class="btn-active">Active</button>
                       </td>
                     </tr>
@@ -408,7 +416,7 @@
                       <td data-label="Phone">(629) 555-0129</td>
                       <td data-label="Mail">jerome@google.com</td>
                       <td data-label="Country">Réunion</td>
-                      <td data-label="Button">
+                      <td data-label="Button" class="status-btn">
                         <button type="button" class="btn-active">Active</button>
                       </td>
                     </tr>
@@ -420,7 +428,7 @@
                       <td data-label="Phone">(406) 555-0120</td>
                       <td data-label="Mail">kathryn@microsoft.com</td>
                       <td data-label="Country">Curaçao</td>
-                      <td data-label="Button">
+                      <td data-label="Button" class="status-btn">
                         <button type="button" class="btn-active">Active</button>
                       </td>
                     </tr>
@@ -432,7 +440,7 @@
                       <td data-label="Phone">(208) 555-0112</td>
                       <td data-label="Mail">jacob@yahoo.com</td>
                       <td data-label="Country">Brazil</td>
-                      <td data-label="Button">
+                      <td data-label="Button" class="status-btn">
                         <button type="button" class="btn-active">Active</button>
                       </td>
                     </tr>
@@ -444,38 +452,40 @@
                       <td data-label="Phone">(704) 555-0127</td>
                       <td data-label="Mail">kristin@facebook.com</td>
                       <td data-label="Country">Åland Islands</td>
-                      <td data-label="Button">
-                        <button type="button" class="btn-inactive">Inactive</button>
+                      <td data-label="Button" class="status-btn">
+                        <button type="button" class="btn-inactive">
+                          Inactive
+                        </button>
                       </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
+              <!-- * Footer -->
               <footer class="footer">
+                <!-- * info -->
                 <div class="footer-info">
                   Showing data 1 to 8 of 256K entries
                 </div>
+                <!-- * pagination -->
                 <div class="pagination">
                   <a href="#">
                     <svg class="icon icon-arrow-left">
-                      <use xlink:href="#icon-arrow-left"></use>
-                    </svg></a>
+                      <use xlink:href="#icon-arrow-left"></use></svg
+                  ></a>
                   <a href="#">1</a>
                   <a href="#" class="active">2</a>
                   <a href="#">3</a>
                   <a href="#">4</a>
                   <a href="#">
                     <svg class="icon icon-arrow-right">
-                      <use xlink:href="#icon-arrow-right"></use>
-                    </svg></a>
+                      <use xlink:href="#icon-arrow-right"></use></svg
+                  ></a>
                 </div>
               </footer>
             </div>
           </div>
         </main>
-        <!-- * Aside -->
-
-        <!-- * Section -->
       </div>
     </div>
     <script defer src="./index.js"></script>
