@@ -7,19 +7,33 @@
 .logo {
   display: flex;
   align-items: center;
-  margin-top: 36px;
-  margin-bottom: 64px;
+  margin: 36px 0 64px 20px;
 }
 
 .icon-logo {
-  padding-right: 10px;
   font-size: var(--fs-big);
+  transition: transform 0.5s ease-in-out;
+}
+
+.logo:hover .icon-logo{
+  animation: rotation 2s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .page-title {
   font-size: var(--fs-big);
   font-weight: var(--fw-semibold);
   padding-right: 5px;
+  padding-left: 10px;
 }
 
 .page-title-version {
@@ -67,7 +81,7 @@
   padding: 10px;
   border-radius: 8px;
   border: none;
-  background-color: var(--c-white);
+  /* background-color: var(--c-white); */
   color: var(--c-icon-grey);
   cursor: pointer;
   transition: all .3s ease-in-out;
