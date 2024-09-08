@@ -1,4 +1,4 @@
-function toggleButton(button) {
+const toggleButton = (button) => {
   // Перевірка поточного класу і зміна його на активний/неактивний
   if (button.classList.contains('btn-inactive')) {
     button.classList.remove('btn-inactive');
@@ -9,4 +9,7 @@ function toggleButton(button) {
     button.classList.add('btn-inactive');
     button.textContent = 'Inactive'; // Зміна тексту на "Inactive"
   }
-}
+};
+
+
+

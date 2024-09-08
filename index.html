@@ -227,6 +227,14 @@
           <!-- * greeting -->
           <div class="header-greeting">
             <div class="header-greeting-title">Hello Evano 👋🏼</div>
+            <div class="burger-menu">
+              <button class="burger-icon">
+                <img src="./assets/img/menu.svg" alt="burger" />
+              </button>
+              <button class="close-icon">
+                <img src="./assets/img/close.svg" alt="close" />
+              </button>
+            </div>
           </div>
         </header>
         <!-- * Main -->
@@ -238,7 +246,7 @@
               <nav class="nav">
                 <ul class="nav-list">
                   <li class="nav-item">
-                    <a class="nav-link">
+                    <a class="nav-link dashboard">
                       <svg class="icon icon-key-square start">
                         <use xlink:href="#icon-key-square"></use>
                       </svg>
@@ -249,7 +257,7 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link">
+                    <a class="nav-link product">
                       <svg class="icon icon-d-square start">
                         <use xlink:href="#icon-d-square"></use>
                       </svg>
@@ -260,7 +268,7 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link">
+                    <a class="nav-link customers">
                       <svg class="icon icon-user-square start">
                         <use xlink:href="#icon-user-square"></use>
                       </svg>
@@ -271,7 +279,7 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link">
+                    <a class="nav-link income">
                       <svg class="icon icon-wallet-money start">
                         <use xlink:href="#icon-wallet-money"></use>
                       </svg>
@@ -282,7 +290,7 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link">
+                    <a class="nav-link promote">
                       <svg class="icon icon-discount-shape start">
                         <use xlink:href="#icon-discount-shape"></use>
                       </svg>
@@ -293,7 +301,7 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link">
+                    <a class="nav-link help">
                       <svg class="icon icon-message-question start">
                         <use xlink:href="#icon-message-question"></use>
                       </svg>
@@ -327,7 +335,7 @@
           </div>
           <!-- * section -->
           <div class="section">
-            <div class="section-main">
+            <div class="section-main customers section-main-inactive">
               <div class="section-header">
                 <div class="title-wrapper">
                   <div class="substring-title">All Customers</div>
@@ -512,28 +520,127 @@
                 </div>
                 <!-- * pagination -->
                 <div class="pagination">
-                  <a href="#">
+                  <button class="arrow" id="prev">
                     <svg class="icon icon-arrow-left">
-                      <use xlink:href="#icon-arrow-left"></use></svg
-                  ></a>
-                  <a href="#">1</a>
-                  <a href="#" class="active">2</a>
-                  <a href="#">3</a>
-                  <a href="#">4</a>
-                  <a>...</a>
-                  <a href="#">40</a>
-
-                  <a href="#">
+                      <use xlink:href="#icon-arrow-left"></use>
+                    </svg>
+                  </button>
+                  <button>1</button>
+                  <button class="active">2</button>
+                  <button>3</button>
+                  <button>4</button>
+                  <button>...</button>
+                  <button>40</button>
+                  <button class="arrow" id="next">
                     <svg class="icon icon-arrow-right">
-                      <use xlink:href="#icon-arrow-right"></use></svg
-                  ></a>
+                      <use xlink:href="#icon-arrow-right"></use>
+                    </svg>
+                  </button>
                 </div>
               </footer>
+            </div>
+            <!-- dashboard -->
+            <div class="section-main dashboard section-main-inactive">
+              <div class="section-header">
+                <div class="title-wrapper">
+                  <div class="substring-title">Dashboard</div>
+                  <div class="members">Active Members</div>
+                </div>
+                <div class="search">
+                  <label class="label">
+                    <img
+                      class="search-img"
+                      src="./assets/img/search.svg"
+                      alt="search"
+                    />
+                    <input type="text" placeholder="Search" class="input" />
+                  </label>
+                </div>
+              </div>
+            </div>
+            <!-- product -->
+            <div class="section-main product section-main-inactive">
+              <div class="section-header">
+                <div class="title-wrapper">
+                  <div class="substring-title">Products</div>
+                  <div class="members">Active Members</div>
+                </div>
+                <div class="search">
+                  <label class="label">
+                    <img
+                      class="search-img"
+                      src="./assets/img/search.svg"
+                      alt="search"
+                    />
+                    <input type="text" placeholder="Search" class="input" />
+                  </label>
+                </div>
+              </div>
+            </div>
+            <!-- income -->
+            <div class="section-main income section-main-inactive">
+              <div class="section-header">
+                <div class="title-wrapper">
+                  <div class="substring-title">Income</div>
+                  <div class="members">Active Members</div>
+                </div>
+                <div class="search">
+                  <label class="label">
+                    <img
+                      class="search-img"
+                      src="./assets/img/search.svg"
+                      alt="search"
+                    />
+                    <input type="text" placeholder="Search" class="input" />
+                  </label>
+                </div>
+              </div>
+            </div>
+            <!-- promote -->
+            <div class="section-main promote section-main-inactive">
+              <div class="section-header">
+                <div class="title-wrapper">
+                  <div class="substring-title">Promote</div>
+                  <div class="members">Active Members</div>
+                </div>
+                <div class="search">
+                  <label class="label">
+                    <img
+                      class="search-img"
+                      src="./assets/img/search.svg"
+                      alt="search"
+                    />
+                    <input type="text" placeholder="Search" class="input" />
+                  </label>
+                </div>
+              </div>
+            </div>
+            <!-- help -->
+            <div class="section-main help section-main-inactive">
+              <div class="section-header">
+                <div class="title-wrapper">
+                  <div class="substring-title">Help</div>
+                  <div class="members">Active Members</div>
+                </div>
+                <div class="search">
+                  <label class="label">
+                    <img
+                      class="search-img"
+                      src="./assets/img/search.svg"
+                      alt="search"
+                    />
+                    <input type="text" placeholder="Search" class="input" />
+                  </label>
+                </div>
+              </div>
             </div>
           </div>
         </main>
       </div>
     </div>
-    <script defer src="./index.js"></script>
+    <script defer src="./js/main.js"></script>
+    <script defer src="./js/status.js"></script>
+    <script defer src="./js/pagination.js"></script>
+    <script defer src="./js/burger.js"></script>
   </body>
 </html>
