@@ -2,24 +2,20 @@ document.addEventListener('DOMContentLoaded', function () {
   const burgerIcon = document.querySelector('.burger-icon');
   const closeIcon = document.querySelector('.close-icon');
   const sidebar = document.querySelector('.sidebar');
+  const sectionMain = document.querySelector('.section-main');
+  const body = document.body;
 
-  // Функція для відкриття/закриття сайдбару
-  function closeSidebar() {
-    sidebar.classList.add('hidden');
-  }
+  // Відкривання сайдбару
+  burgerIcon.addEventListener('click', function () {
+    body.classList.add('sidebar-active');
+    burgerIcon.style.display = 'none';
+    closeIcon.style.display = 'block';
+  });
 
-  // Обробник події для бургер-іконки
-  burgerIcon.addEventListener('click', closeSidebar);
-
-  function openSidebar() {
-    sidebar.classList.remove('hidden');
-  }
-
-  // Обробник події для бургер-іконки
-  closeIcon.addEventListener('click', openSidebar);
+  // Закривання сайдбару
+  closeIcon.addEventListener('click', function () {
+    body.classList.remove('sidebar-active');
+    burgerIcon.style.display = 'block';
+    closeIcon.style.display = 'none';
+  });
 });
-
-  
-  
-
-

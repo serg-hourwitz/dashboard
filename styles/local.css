@@ -29,26 +29,53 @@
   }
 }
 
-/* Сховане положення бургер-іконки за замовчуванням */
+.burger-menu {
+  display: none;
+}
+
 .burger-icon,
 .close-icon {
-  display: none;
   background: none;
   border: none;
   cursor: pointer;
 }
 
-@media (max-width: 1100px) {
-  .burger-icon, .close-icon {
-    display: block;
-  }
-  .sidebar {
-    transform: translateX(-100%);
-  }
+.sidebar-hidden {
+  transform: translateX(-100%);
 }
 
-.sidebar.hidden {
-  transform: translateX(100%);
+.section-main {
+  transition: width 0.3s ease;
+}
+
+.full-width {
+  width: 100%;
+}
+
+@media (max-width: 1100px) {
+
+  .burger-menu {
+    display: block;
+
+  }
+
+  .sidebar {
+    transform: translateX(-100%);
+    /* За замовчуванням прихований */
+    position: fixed;
+    height: 100%;
+    top: 130px;
+    left: 0;
+    z-index: 1000;
+  }
+
+  .section-main {
+    width: 100%;
+  }
+
+  .sidebar-active .sidebar {
+    transform: translateX(0);
+  }
 }
 
 .page-title {
@@ -68,6 +95,7 @@
 .header-greeting {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 37px 0 51px 71px;
   background-color: var(--c-bgd-grey);
 }
@@ -81,6 +109,7 @@
   .header-greeting {
     justify-content: flex-end;
     background-color: var(--c-white);
+    padding-left: 60px;
   }
 
   .header-greeting-title {
@@ -95,11 +124,6 @@
   align-items: center;
   background-color: var(--c-white);
   transition: transform 0.5s ease;
-}
-
-/* Показ бургер-іконки коли sidebar прихований */
-.sidebar.hidden+.logo .burger-icon {
-  display: block;
 }
 
 .container {
@@ -180,6 +204,12 @@
   grid-template-columns: 306px auto;
 }
 
+@media (max-width: 1100px) {
+  .main {
+    display: block;
+  }
+}
+
 /* Section */
 
 .section {
@@ -187,6 +217,12 @@
   background-color: var(--c-bgd-grey);
   padding-left: 70px;
   padding-right: 95px;
+}
+
+@media (max-width: 1100px) {
+  .section {
+    padding-left: 10px;
+  }
 }
 
 .section-main {
@@ -206,10 +242,17 @@
 
 .section-header {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding-top: 38px;
   padding-bottom: 53px;
+}
+
+@media (max-width: 500px) {
+  .title-wrapper {
+    padding-bottom: 20px;
+  }
 }
 
 .substring-title {
@@ -225,7 +268,7 @@
 }
 
 .input {
-  width: 216px;
+  max-width: 216px;
   border: none;
   outline: none;
   background-color: var(--c-bgd-grey);
@@ -233,6 +276,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 40px;
+  cursor: pointer;
 }
 
 .input::placeholder {
@@ -281,6 +325,12 @@
 .pagination {
   display: flex;
   gap: 15px;
+}
+
+@media (max-width: 450px) {
+  .pagination {
+    gap: 2px;
+  }
 }
 
 .pagination button {

@@ -15,7 +15,6 @@ body {
 }
 
 .wrapper {
-  /* max-width: 1470px; */
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -26,8 +25,5 @@ ul {
   padding: 0;
 }
 
-input {
-  width: 100%;
-  cursor: pointer;
-}
+
 
