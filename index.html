@@ -213,21 +213,21 @@
 
     <div class="app">
       <!-- * Page -->
-      <div class="page wrapper">
+      <div class="wrapper">
         <!-- * Header -->
         <header class="header">
           <!-- * logo -->
-          <div class="logo">
-            <svg class="icon icon-logo">
+          <div class="header__logo">
+            <svg class="icon header__logo-icon">
               <use xlink:href="#icon-logo"></use>
             </svg>
-            <span class="page-title">Dashboard</span>
-            <span class="page-title-version">v.01</span>
+            <span class="header__logo-title">Dashboard</span>
+            <span class="header__logo-version">v.01</span>
           </div>
           <!-- * greeting -->
-          <div class="header-greeting">
-            <div class="header-greeting-title">Hello Evano 👋🏼</div>
-            <div class="burger-menu">
+          <div class="header__greeting">
+            <div class="header__greeting-title">Hello Evano 👋🏼</div>
+            <div class="burger__menu">
               <button class="burger-icon">
                 <img src="./assets/img/menu.svg" alt="burger" />
               </button>
@@ -240,13 +240,13 @@
         <!-- * Main -->
         <main class="main">
           <!-- * sidebar -->
-          <div class="sidebar">
+          <aside class="sidebar">
             <div class="container">
               <!-- * Nav -->
               <nav class="nav">
-                <ul class="nav-list">
-                  <li class="nav-item">
-                    <a class="nav-link dashboard">
+                <ul class="nav__list">
+                  <li class="nav__list-item">
+                    <a class="nav__link dashboard">
                       <svg class="icon icon-key-square start">
                         <use xlink:href="#icon-key-square"></use>
                       </svg>
@@ -256,8 +256,8 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link product">
+                  <li class="nav__list-item">
+                    <a class="nav__link product">
                       <svg class="icon icon-d-square start">
                         <use xlink:href="#icon-d-square"></use>
                       </svg>
@@ -267,8 +267,8 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link customers">
+                  <li class="nav__list-item">
+                    <a class="nav__link customers">
                       <svg class="icon icon-user-square start">
                         <use xlink:href="#icon-user-square"></use>
                       </svg>
@@ -278,8 +278,8 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link income">
+                  <li class="nav__list-item">
+                    <a class="nav__link income">
                       <svg class="icon icon-wallet-money start">
                         <use xlink:href="#icon-wallet-money"></use>
                       </svg>
@@ -289,8 +289,8 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link promote">
+                  <li class="nav__list-item">
+                    <a class="nav__link promote">
                       <svg class="icon icon-discount-shape start">
                         <use xlink:href="#icon-discount-shape"></use>
                       </svg>
@@ -300,8 +300,8 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link help">
+                  <li class="nav__list-item">
+                    <a class="nav__link help">
                       <svg class="icon icon-message-question start">
                         <use xlink:href="#icon-message-question"></use>
                       </svg>
@@ -315,10 +315,10 @@
               </nav>
               <!-- * Manager -->
               <div class="manager">
-                <img src="./assets/img/manager.jpg" alt="" />
-                <div class="manager-info">
-                  <span class="manager-name"> Evano </span>
-                  <span class="manager-position"> Project Manager </span>
+                <img src="./assets/img/manager.jpg" alt="photo" />
+                <div class="manager__info">
+                  <span class="manager__name"> Evano </span>
+                  <span class="manager__position"> Project Manager </span>
                 </div>
               </div>
             </div>
@@ -332,29 +332,29 @@
             <svg class="icon icon-search">
               <use xlink:href="#icon-search"></use>
             </svg> -->
-          </div>
+          </aside>
           <!-- * section -->
           <div class="section">
-            <div class="section-main customers section-main-inactive">
-              <div class="section-header">
-                <div class="title-wrapper">
-                  <div class="substring-title">All Customers</div>
-                  <div class="members">Active Members</div>
+            <div class="section__main customers section__main-inactive">
+              <div class="section__header">
+                <div class="section__header-title-wrapper">
+                  <div class="section__header-title">All Customers</div>
+                  <div class="section__header-subtitle">Active Members</div>
                 </div>
                 <div class="search">
-                  <label class="label">
+                  <label class="search__label">
                     <img
                       class="search-img"
                       src="./assets/img/search.svg"
                       alt="search"
                     />
-                    <input type="text" placeholder="Search" class="input" />
+                    <input type="text" placeholder="Search" class="search__input" />
                   </label>
                 </div>
               </div>
               <!-- * table -->
-              <div class="customers-table-header">
-                <table class="customers-table">
+              <div class="customers__table-wrapper">
+                <table class="customers__table">
                   <thead>
                     <tr class="customers-table-header">
                       <th scope="col" class="customer-name">Customer Name</th>
@@ -540,7 +540,7 @@
               </footer>
             </div>
             <!-- dashboard -->
-            <div class="section-main dashboard section-main-inactive">
+            <div class="section__main dashboard section__main-inactive">
               <div class="section-header">
                 <div class="title-wrapper">
                   <div class="substring-title">Dashboard</div>
@@ -559,7 +559,7 @@
               </div>
             </div>
             <!-- product -->
-            <div class="section-main product section-main-inactive">
+            <div class="section__main product section__main-inactive">
               <div class="section-header">
                 <div class="title-wrapper">
                   <div class="substring-title">Products</div>
@@ -578,7 +578,7 @@
               </div>
             </div>
             <!-- income -->
-            <div class="section-main income section-main-inactive">
+            <div class="section__main income section__main-inactive">
               <div class="section-header">
                 <div class="title-wrapper">
                   <div class="substring-title">Income</div>
@@ -597,7 +597,7 @@
               </div>
             </div>
             <!-- promote -->
-            <div class="section-main promote section-main-inactive">
+            <div class="section__main promote section__main-inactive">
               <div class="section-header">
                 <div class="title-wrapper">
                   <div class="substring-title">Promote</div>
@@ -616,7 +616,7 @@
               </div>
             </div>
             <!-- help -->
-            <div class="section-main help section-main-inactive">
+            <div class="section__main help section__main-inactive">
               <div class="section-header">
                 <div class="title-wrapper">
                   <div class="substring-title">Help</div>
