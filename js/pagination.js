@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
   const buttons = document.querySelectorAll(
-    '.pagination button:not(#prev):not(#next)'
+    '.pagination__button:not(#prev):not(#next)'
   ); // Всі кнопки, окрім стрілок
   let currentPage = 2; // початкова активна сторінка (номер 2)
 

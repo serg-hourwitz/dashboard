@@ -279,7 +279,7 @@
   position: relative;
 }
 
-.search-img {
+.search__img {
   position: absolute;
   top: 8px;
   left: 9px;
@@ -353,7 +353,7 @@
   border-radius: 4px;
 }
 
-.arrow {
+.pagination__arrow {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -366,11 +366,11 @@
   height: 12px;
 }
 
-.pagination button.active {
+.pagination__button.active {
   background-color: var(--c-violet);
-  color: white;
+  color: var(--c-white);
 }
 
-.pagination button:hover:not(.active) {
+.pagination__button:hover:not(.active) {
   background-color: var(--c-ultralight-grey);
 }
