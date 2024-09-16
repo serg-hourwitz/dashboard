@@ -14,18 +14,18 @@
   margin-bottom: 30px;
 }
 
-table caption {
+.customers__table caption {
   font-size: 1.5em;
   margin: .5em 0 .75em;
 }
 
-table tr {
+.customers__table tr {
   border: 1px solid #ddd;
   padding: .35em;
 }
 
-table th,
-table td {
+.customers__table th,
+.customers__table td {
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: start;
@@ -36,7 +36,7 @@ table td {
   justify-content: flex-end;
 }
 
-table th {
+.customers__table th {
   font-size: var(--fs-primary);
   font-weight: var(--fw-medium);
   color: var(--c-grey);
@@ -46,7 +46,7 @@ table th {
 }
 
 @media screen and (max-width: 1100px) {
-  .customers-table {
+  .customers__table {
     border: 0;
   }
 
@@ -83,7 +83,7 @@ table th {
     * aria-label has no advantage, it won't be read inside a table
     content: attr(aria-label);
     */
-    content: attr(data-label);
+    content: attr(data-search__label);
     float: left;
     font-weight: bold;
     text-transform: uppercase;
